@@ -8,10 +8,20 @@
     <meta name="description" content="Secure and Innovative Digital SACCO for Financial Empowerment" />
     <link rel="icon" type="image/png" href="https://amarachsacco.com/static/logo.png" />
     <link rel="apple-touch-icon" href="https://amarachsacco.com/static/logo.png" />
-    <script type="module" crossorigin src="/assets/index-DXp2Iban.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D7D1yyTA.css">
+    <script type="module" crossorigin src="/assets/index-bUrQ3a0J.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-XmjQTSrH.css">
   <link rel="manifest" href="/manifest.webmanifest"></head>
   <body>
+    <script>
+      // Force unregister any existing service workers to clear PWA cache
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for(let registration of registrations) {
+            registration.unregister();
+          }
+        });
+      }
+    </script>
     <div id="root"></div>
   </body>
 </html>
